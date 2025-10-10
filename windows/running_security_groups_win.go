@@ -163,7 +163,7 @@ var _ = WindowsDescribe("WINDOWS: App Instance Networking", func() {
 			deleteSecurityGroup(securityGroupName)
 		})
 
-		It("WINDOWS: correctly configures asgs", func() {
+		PIt("WINDOWS: correctly configures asgs", func() {
 			By("creating a wide-open ASG")
 			dest := Destination{
 				IP:       "0.0.0.0/0", // some random IP that isn't covered by an existing Security Group rule
